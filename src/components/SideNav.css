@@ -1,0 +1,65 @@
+/* src/components/SideNav.css */
+.side-nav {
+    width: 100px;
+    height: 100vh;
+    background-color: #f8f9fa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .side-nav h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .side-nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .side-nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  .side-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .side-nav ul li a:hover {
+    color: #007bff;
+  }
+  .nav-bar-card {
+    border: 1px #007bff;
+  }
+  /* Hamburger menu styling */
+.hamburger-menu {
+    display: none; /* Hide by default */
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+  }
+  
+  @media (max-width: 480px) {
+    .hamburger-menu {
+      display: block; /* Show on mobile screens */
+    }
+  
+    .side-nav {
+      display: none; /* Hide side nav by default */
+    }
+  
+    .side-nav.open {
+      display: block; /* Show side nav when toggled */
+      width: 100%; /* Full width for mobile */
+      height: auto;
+      position: relative;
+    }
+  }
+  

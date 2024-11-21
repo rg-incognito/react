@@ -36,3 +36,75 @@
     transform: rotate(360deg);
   }
 }
+.product-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+.product-list {
+  width: 100vw;
+  display:flex ;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* src/App.css or main CSS file */
+
+/* Default layout for larger screens */
+.app-container {
+  display: flex;
+}
+
+.side-nav {
+  width: 250px;
+  height: 100vh;
+  background-color: #f8f9fa;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+  margin-left: 250px; /* Same width as the side-nav */
+  padding: 20px;
+  flex: 1;
+}
+
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 768px) {
+  .side-nav {
+    width: 200px; /* Narrower side nav for tablets */
+  }
+  
+  .main-content {
+    margin-left: 200px;
+  }
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 480px) {
+  .side-nav {
+    width: 100%; /* Full width for mobile screens */
+    height: auto; /* Adjust height */
+    position: relative; /* No fixed positioning */
+    box-shadow: none; /* Remove shadow for a cleaner look */
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 10px; /* Less padding for mobile */
+  }
+}
